@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>杭州电子科技大学传播系首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-image: url('https://zhaosheng.hdu.edu.cn/admin/upload/image/20170610102611_88436.jpg'); /* 校园背景图 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .header {
+            position: relative;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.3); /* 半透明背景 */
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .logo h1 {
+            color: white;
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .top-nav {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        .top-nav a:hover, .top-nav a:focus {
+            color: purple;
+        }
+
+        .search-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .search-input {
+            padding: 15px;
+            font-size: 20px;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px; /* 根据需要调整搜索框的最大宽度 */
+        }
+
+        .function-bar {
+            position: fixed;
+            top: 30px; /* 根据需要调整功能栏的位置 */
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+
+        .news-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px;
+            overflow-x: scroll; /* 使新闻栏目可滚动 */
+        }
+
+        .news-grid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .news-item {
+            width: 180px; /* 新闻栏目的宽度 */
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        /* 底部新闻栏目样式 */
+        .footer-news {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="https://img05.51jobcdn.com/im/2017/resumetemplate/xiaohui/attachment/1152.jpg" alt="杭州电子科技大学校徽"> <!-- https://img05.51jobcdn.com/im/2017/resumetemplate/xiaohui/attachment/1152.jpg -->
+            <h1>杭州电子科技大学传播系</h1>
+        </div>
+        <nav class="top-nav">
+            <a href="#">文献搜索</a>
+            <a href="#">师生论坛</a>
+            <a href="#">专业介绍</a>
+            <a href="#">学科前沿</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="快捷搜索...">
+    </div>
+
+    <div class="function-bar">
+        <a href="#"></* 功能图标1 */</a>
+        <a href="#"></* 功能图标2 */</a>
+        <!-- 更多功能图标 -->
+    </div>
+
+    <!-- 新闻栏目 -->
+    <div class="news-container">
+        <div class="news-grid">
+            <div class="news-item">新闻1</div>
+            <div class="news-item">新闻2</div>
+            <div class="news-item">新闻3</div>
+            <!-- 更多新闻 -->
+        </div>
+    </div>
+
+    <!-- 底部新闻栏目 -->
+    <div class="footer-news">
+        <h3>学科新闻</h3>
+        <div class="news-grid">
+            <!-- 这里可以插入更多的新闻栏目 -->
+        </div>
+    </div>
+
+</body>
+</html>
